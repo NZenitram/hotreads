@@ -1,0 +1,8 @@
+<h1>Hot Sauce</h1>
+<% @links.each do |link| %>
+  <% if link == @links.first %>
+    <p><%= link[:url] %> Top Link!</p>
+  <% else %>
+    <p><%= link[:url] %> Hot Read!</p>
+  <% end %>
+<% end %>
